@@ -1,0 +1,5 @@
+s = float(input('Salário do funcionário: R$'))
+aumperc = float(input('Quanto porcento de aumento o funcionário receberá?'))
+r = s + (s * aumperc/100)
+#r1 = s * (1.15)
+print('O funcionário que ganhava R${:.2f} com o aumento de {}%, passa ganhar R${:.2f}.'.format(s, aumperc, r))
