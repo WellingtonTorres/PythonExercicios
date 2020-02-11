@@ -1,5 +1,6 @@
 cadastro = dict()
 dados = list()
+soma = 0
 while True:
     cadastro['nome'] = str(input('Nome: '))
     while True:
@@ -15,3 +16,7 @@ while True:
     if parar in 'nN':
         break
 print(f'A) Ao todos temos {len(dados)} pessoas cadastradas')
+for c in range(0, len(dados)):
+    soma += dados[c]["idade"]
+media = soma / len(dados)
+print(f'B) A média de idade é de {media}')
