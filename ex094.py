@@ -20,3 +20,9 @@ for c in range(0, len(dados)):
     soma += dados[c]["idade"]
 media = soma / len(dados)
 print(f'B) A média de idade é de {media}')
+print('As mulheres cadastradas foram: ')
+for pos, val in enumerate(dados):
+    if dados[pos]["sexo"] in 'fF':
+        print(f'{dados[pos]["nome"]}', end=', ')
+print(' ')
+print(dados)
