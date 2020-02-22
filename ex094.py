@@ -19,10 +19,16 @@ print(f'A) Ao todos temos {len(dados)} pessoas cadastradas')
 for c in range(0, len(dados)):
     soma += dados[c]["idade"]
 media = soma / len(dados)
-print(f'B) A média de idade é de {media}')
-print('As mulheres cadastradas foram: ')
+print(f'B) A média de idade é de {media:.2f}')
+print('C) As mulheres cadastradas foram: ', end='')
 for pos, val in enumerate(dados):
     if dados[pos]["sexo"] in 'fF':
         print(f'{dados[pos]["nome"]}', end=', ')
 print(' ')
-print(dados)
+print('D) Lista das pessoas que estão acima da média:')
+for e in dados:
+    for k, v in e.items():
+        if e["idade"] > media:
+            print(f'{k} = {v}; ', end=' ')
+    print('')
+print('<<ENCERRADO>>')
