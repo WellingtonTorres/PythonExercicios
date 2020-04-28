@@ -4,7 +4,7 @@ dados['jogador'] = str(input('Nome do jogador: '))
 num_ = int(input('Numero de partidas que o jogador jogou: '))
 for n in range(0, num_):
     gols.append(int(input(f'     Qunatos gols na partida {n}? ')))
-dados['gols'] = gols
+dados['gols'] = gols[:] #Não esquecer de realizar cópia
 dados['total'] = sum(gols)
 print('=-=' * 30)
 print(dados)
