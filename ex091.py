@@ -12,5 +12,5 @@ ordenar = sorted(jogadas, key=lambda k: k['val_dado'], reverse=True)
 print('RANKIG DOS JOGADORES')
 for i in range(0, len(ordenar)):
     print(f'{i+1}º lugar: {ordenar[i]["jogador"]} com {ordenar[i]["val_dado"]}.')
-    sleep(0.4) #ss
+    sleep(0.4)
 print(ordenar)
