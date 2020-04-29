@@ -22,4 +22,4 @@ print('-=' * 3, f' SORTEANDO {qtd_jogos} JOGOS ', '-=' * 3)
 for i, l in enumerate(jogos):
     print(f'Jogo {i+1}: {l}')
     sleep(1)
-#PROFESSOR + O MEU MELHORAMENTO
+#PROFESSOR + MEU RECURSO
