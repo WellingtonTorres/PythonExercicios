@@ -29,4 +29,4 @@ for p, v in enumerate(lista):
 print('\nD) Lista de pessoas que estão acima da média: ')
 for p, v in enumerate(lista):
     if lista[p]["idade"] > media_idade:
-     print(f' Nome = {lista[p]["nome"]}; sexo = {lista[p]["sexo"]}; idade = {lista[p]["idade"]}')
+     print(f'    Nome = {lista[p]["nome"]}; sexo = {lista[p]["sexo"]}; idade = {lista[p]["idade"]}')
