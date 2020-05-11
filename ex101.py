@@ -1,13 +1,10 @@
-from datetime import datetime
-
-
 def voto(anonacimento):
+    from datetime import datetime
     '''
     :param anonacimento: Informar ano de nascimento para saber sobre o seu direito ao voto
     :return: Não há return
     @WellingtonTorres
     '''
-    global idade
     idade = datetime.now().year - anonacimento
     print(f'Com {idade} anos:', end=' ')
     if idade < 14:
